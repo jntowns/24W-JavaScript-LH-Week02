@@ -14,16 +14,19 @@
 <script>
     /* STEP 1: Number types (integer, float, and double)
     declare and initialize an integer and a float, then in the console, reveal the number type with typeof(varName) */
-
+    var num1 = 7;
+    var num2 = 19.65;
+    console.log(num1 + " - " + typeof(num1));
+    console.log(num2 + " - " + typeof(num2));
     // Note - there are also different number systems: binary, octal, and hexadecimal
 
     /* STEP 2: Arithmetic operators
     + (addition), - (subtraction), * (multiplication), / (division), % (remainder or modulo) */
-
+    console.log("num1 + num2 = " + (num1 + num2));
     // Try declaring and initializing a couple of variables as numbers
 
     /* OR… num1 * num2 / 8 + 2 - 0.5; */
-
+    var num3 = 8*5 + 0.513
     /* Keep in mind operator precedence, just like you were taught in math class (*, /, +, -)
     num1 + num2 * 5 - 25 ... is not 575 ... it is 215 */
 
@@ -32,15 +35,22 @@
 
     /* STEP 3: Increment and decrement operators
     ++ and -- are mostly found inside loops to move a counter variable to the next value when needed, either up or down. */
-
+    num1++;
+    console.log(num1);
+    num2--;
+    console.log(num2);
     // Note 1 - you cannot increment/decrement a number directly
     // Note 2 - typing num++ or num-- in the console will output the number before incrementing or decrmenting - try ++num or --num, instead
 
     /* STEP 4: Assignment Operators
     = (assignment), += (addition assignment), -= (subtraction assignment), *= (multiplication assignment), /= (division assignment) */
-
+    num1*=8;
+    console.log(num1);
+    num1-=2;
+    console.log(num1);
     /* STEP 5: Comparison Operators
     ===	(strict equality), !==	(strict-non-equality), < (less than), > (greater than), <= (less than or equal to), >=	(greater than or equal to) */
+    console.log(num1 >= num2);
 </script>
 
 </html>
